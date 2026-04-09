@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ghcr.io/abuettner93/hydranova_labs_website:latest
+    ports:
+      - "8420:8420"
+    restart: unless-stopped
