@@ -9,7 +9,7 @@ export function Section({ id, children, className = '', dark = false }: SectionP
   return (
     <section
       id={id}
-      className={`py-28 sm:py-32 md:py-40 lg:py-48 px-8 sm:px-12 md:px-16 lg:px-8 ${
+      className={`py-14 sm:py-16 md:py-20 lg:py-24 px-8 sm:px-12 md:px-16 lg:px-8 ${
         dark
           ? 'bg-surface-elevated-light dark:bg-surface-elevated-dark'
           : 'bg-surface-light dark:bg-surface-dark'

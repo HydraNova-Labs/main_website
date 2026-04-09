@@ -5,23 +5,23 @@ import { ShieldCheck, Dna, Layers, SlidersHorizontal } from 'lucide-react'
 const pillars = [
   {
     icon: ShieldCheck,
-    title: 'Clean',
-    description: 'Zero pathogens, zero viruses. Every plant begins in a sterile, controlled environment.',
+    title: 'Clean & Virus-Free',
+    description: 'Zero pathogens, zero viruses — disease-free at the cellular level. Every plant begins in a sterile, controlled environment.',
   },
   {
     icon: Dna,
-    title: 'Uniform',
-    description: 'Genetic consistency at scale. Every plant identical in performance, yield, and structure.',
+    title: 'Identical Genetics',
+    description: 'Genetic consistency at scale, matched to top-performing parents. Every plant identical in performance, yield, and structure.',
   },
   {
     icon: Layers,
-    title: 'Unlimited',
-    description: 'Modular infrastructure scales from 5 to 130 chambers seamlessly.',
+    title: 'Scalable to Millions',
+    description: 'Modular infrastructure scales from 5 to 130 chambers seamlessly — all from a single source plant.',
   },
   {
     icon: SlidersHorizontal,
-    title: 'Precise',
-    description: 'Total control over variables — temperature, nutrients, light, hormones.',
+    title: 'Precise & Year-Round',
+    description: 'Total control over temperature, nutrients, light, and hormones. Production independent of season.',
   },
 ]
 
@@ -79,22 +79,6 @@ export function Solution() {
         ))}
       </div>
 
-      {/* Differentiators */}
-      <FadeIn delay={0.2}>
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-10 pt-16 border-t border-border-light dark:border-border-dark">
-          {[
-            { title: 'Virus-Free', sub: 'Disease-free at cellular level' },
-            { title: 'Identical Genetics', sub: 'Matched to top-performing parents' },
-            { title: 'Scalable to Millions', sub: 'From a single source plant' },
-            { title: 'Year-Round', sub: 'Independent of season' },
-          ].map(d => (
-            <div key={d.title} className="text-center">
-              <p className="font-semibold text-text-primary-light dark:text-text-primary-dark">{d.title}</p>
-              <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark mt-2">{d.sub}</p>
-            </div>
-          ))}
-        </div>
-      </FadeIn>
     </Section>
   )
 }
