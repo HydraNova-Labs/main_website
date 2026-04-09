@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+# HydraNova Labs Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Static marketing website for [HydraNova Labs](https://hydranovalabs.com) — a precision tissue culture company producing disease-free, genetically stable plants at industrial scale.
 
-Currently, two official plugins are available:
+Built with React, TypeScript, Vite, and Tailwind CSS. Supports light and dark modes with scroll-triggered animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **Framework:** React + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Fonts:** DM Sans + Instrument Serif
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Development
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+Output is written to `dist/`.
+
+## Deployment
+
+### Netlify / Vercel
+
+Connect the GitHub repo and it will auto-deploy on push. Configuration is in `netlify.toml`.
+
+### Docker
+
+A multi-stage Dockerfile builds the site and serves it via nginx on port `8420`.
+
+```bash
+# Build and run locally
+docker build -t hydranova-website .
+docker run -p 8420:8420 hydranova-website
+
+# Or pull the pre-built image from GHCR
+docker compose up -d
+```
+
+The GitHub Actions workflow automatically builds and pushes the Docker image to `ghcr.io/abuettner93/hydranova_labs_website` on every push to `main`.
