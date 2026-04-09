@@ -7,6 +7,7 @@ interface FadeInProps {
   delay?: number
   direction?: 'up' | 'down' | 'left' | 'right' | 'none'
   duration?: number
+  as?: 'div' | 'span' | 'p'
 }
 
 export function FadeIn({
@@ -14,28 +15,31 @@ export function FadeIn({
   className = '',
   delay = 0,
   direction = 'up',
-  duration = 0.7,
+  duration = 0.8,
+  as = 'div',
 }: FadeInProps) {
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true, amount: 0.15 })
+  const inView = useInView(ref, { once: true, amount: 0.2 })
 
-  const directionOffset = {
-    up: { y: 40 },
-    down: { y: -40 },
-    left: { x: 40 },
-    right: { x: -40 },
+  const offsets = {
+    up: { y: 30 },
+    down: { y: -30 },
+    left: { x: 30 },
+    right: { x: -30 },
     none: {},
   }
 
+  const Component = motion[as]
+
   return (
-    <motion.div
+    <Component
       ref={ref}
-      initial={{ opacity: 0, ...directionOffset[direction] }}
-      animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...directionOffset[direction] }}
-      transition={{ duration, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      initial={{ opacity: 0, ...offsets[direction] }}
+      animate={inView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...offsets[direction] }}
+      transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
-    </motion.div>
+    </Component>
   )
 }

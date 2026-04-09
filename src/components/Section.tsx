@@ -9,13 +9,13 @@ export function Section({ id, children, className = '', dark = false }: SectionP
   return (
     <section
       id={id}
-      className={`py-24 md:py-36 lg:py-40 px-6 md:px-12 lg:px-8 ${
+      className={`py-28 sm:py-32 md:py-40 lg:py-48 px-8 sm:px-12 md:px-16 lg:px-8 ${
         dark
           ? 'bg-surface-elevated-light dark:bg-surface-elevated-dark'
           : 'bg-surface-light dark:bg-surface-dark'
       } ${className}`}
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-[1080px] mx-auto">
         {children}
       </div>
     </section>

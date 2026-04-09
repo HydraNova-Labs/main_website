@@ -28,49 +28,51 @@ const team = [
 export function Team() {
   return (
     <Section id="team">
-      <div className="text-center mb-20">
-        <FadeIn>
-          <p className="text-brand-500 dark:text-brand-400 font-semibold text-sm tracking-[0.2em] uppercase mb-4">
+      {/* Header */}
+      <div className="text-center max-w-2xl mx-auto mb-24">
+        <FadeIn className="text-center">
+          <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-5">
             Leadership
           </p>
         </FadeIn>
-        <FadeIn delay={0.1}>
-          <h2 className="text-3xl md:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark tracking-tight leading-tight">
-            Science. Sales. Execution.
+        <FadeIn delay={0.1} className="text-center">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary-light dark:text-text-primary-dark leading-[1.1] tracking-[-0.01em]">
+            Science. Sales. <span className="italic">Execution.</span>
           </h2>
         </FadeIn>
-        <FadeIn delay={0.2}>
-          <p className="mt-6 text-text-secondary-light dark:text-text-secondary-dark max-w-2xl mx-auto text-lg leading-relaxed">
+        <FadeIn delay={0.2} className="text-center">
+          <p className="mt-7 text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
             A team combining deep scientific expertise, proven sales execution, and decades of
             operational scaling.
           </p>
         </FadeIn>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Team cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {team.map((t, i) => (
-          <FadeIn key={t.name} delay={i * 0.12}>
-            <div className="p-10 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center h-full">
+          <FadeIn key={t.name} delay={i * 0.12} className="h-full">
+            <div className="p-10 md:p-11 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center h-full flex flex-col">
               {/* Avatar */}
-              <div className="w-20 h-20 rounded-full bg-brand-50 dark:bg-brand-900/40 flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-brand-500 dark:text-brand-400">
+              <div className="w-20 h-20 rounded-full bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mx-auto mb-7">
+                <span className="text-xl font-semibold text-brand-500 dark:text-brand-400">
                   {t.name.split(' ').map(n => n[0]).join('')}
                 </span>
               </div>
               <h3 className="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark">
                 {t.name}
               </h3>
-              <p className="text-brand-500 dark:text-brand-400 font-medium text-sm mt-1 mb-5">
+              <p className="text-brand-500 dark:text-brand-400 font-medium text-sm mt-2 mb-6">
                 {t.role}
               </p>
-              <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed mb-6">
+              <p className="text-text-secondary-light dark:text-text-secondary-dark leading-[1.7] text-[15px] mb-7 flex-1">
                 {t.description}
               </p>
               <div className="flex flex-wrap gap-2 justify-center">
                 {t.tags.map(tag => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1.5 rounded-full bg-surface-elevated-light dark:bg-surface-elevated-dark text-text-secondary-light dark:text-text-secondary-dark"
+                    className="text-xs px-3.5 py-1.5 rounded-full bg-surface-elevated-light dark:bg-surface-elevated-dark text-text-secondary-light dark:text-text-secondary-dark"
                   >
                     {tag}
                   </span>
@@ -83,18 +85,18 @@ export function Team() {
 
       {/* Partners */}
       <FadeIn delay={0.2}>
-        <div className="mt-24 pt-16 border-t border-border-light dark:border-border-dark text-center">
-          <h3 className="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark mb-10">
+        <div className="mt-28 pt-16 border-t border-border-light dark:border-border-dark text-center">
+          <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-12">
             Strategic Partners
-          </h3>
-          <div className="flex flex-wrap justify-center gap-8">
+          </p>
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6">
             {[
               { name: 'Biora Technologies', sub: 'Precision Controlled Environments' },
               { name: 'Advanced Nutrients', sub: 'Agricultural Biotech Solutions' },
             ].map(p => (
               <div
                 key={p.name}
-                className="px-10 py-6 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark"
+                className="px-12 py-8 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark"
               >
                 <p className="font-semibold text-text-primary-light dark:text-text-primary-dark text-lg">
                   {p.name}

@@ -23,26 +23,27 @@ const categories = [
   {
     title: 'Floriculture',
     text: 'Specialized floriculture genetics for vibrant and resilient blooms, including refined Orchids and robust Chrysanthemums.',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1585399000684-d2f72660f092?w=600&q=80',
   },
 ]
 
 export function Technology() {
   return (
     <Section id="technology" dark>
-      <div className="text-center mb-20">
-        <FadeIn>
-          <p className="text-brand-500 dark:text-brand-400 font-semibold text-sm tracking-[0.2em] uppercase mb-4">
+      {/* Header */}
+      <div className="text-center max-w-2xl mx-auto mb-24">
+        <FadeIn className="text-center">
+          <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-5">
             Technology
           </p>
         </FadeIn>
-        <FadeIn delay={0.1}>
-          <h2 className="text-3xl md:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark tracking-tight">
-            Powered by Biora
+        <FadeIn delay={0.1} className="text-center">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary-light dark:text-text-primary-dark leading-[1.1] tracking-[-0.01em]">
+            Powered by <span className="italic text-brand-500 dark:text-brand-400">Biora</span>
           </h2>
         </FadeIn>
-        <FadeIn delay={0.2}>
-          <p className="mt-6 text-text-secondary-light dark:text-text-secondary-dark max-w-2xl mx-auto text-lg leading-relaxed">
+        <FadeIn delay={0.2} className="text-center">
+          <p className="mt-7 text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
             Strategic partnership with Biora Technologies for precision-controlled tissue culture
             environments — the safest and most stable environment for tissue culture.
           </p>
@@ -51,9 +52,9 @@ export function Technology() {
 
       {/* Tech image */}
       <FadeIn delay={0.15}>
-        <div className="rounded-2xl overflow-hidden mb-20 aspect-[21/9]">
+        <div className="rounded-2xl overflow-hidden mb-24 aspect-[21/9]">
           <img
-            src="https://images.unsplash.com/photo-1581093458791-9d42e3c7e117?w=1400&q=80"
+            src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1400&q=80"
             alt="Controlled environment agriculture technology"
             className="w-full h-full object-cover"
           />
@@ -61,12 +62,12 @@ export function Technology() {
       </FadeIn>
 
       {/* Specs grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-28">
         {specs.map((s, i) => (
-          <FadeIn key={s.title} delay={i * 0.08}>
-            <div className="p-8 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center h-full">
-              <s.icon size={32} className="mx-auto mb-5 text-brand-500 dark:text-brand-400" />
-              <h3 className="font-semibold text-text-primary-light dark:text-text-primary-dark mb-2 text-lg">
+          <FadeIn key={s.title} delay={i * 0.08} className="h-full">
+            <div className="p-8 md:p-9 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center h-full">
+              <s.icon size={28} className="mx-auto mb-5 text-brand-500 dark:text-brand-400 opacity-80" />
+              <h3 className="font-semibold text-text-primary-light dark:text-text-primary-dark mb-2">
                 {s.title}
               </h3>
               <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
@@ -78,17 +79,15 @@ export function Technology() {
       </div>
 
       {/* Product categories */}
-      <FadeIn>
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">
-            Product Categories
-          </h3>
-        </div>
+      <FadeIn className="text-center">
+        <h3 className="font-serif text-2xl md:text-3xl text-text-primary-light dark:text-text-primary-dark mb-14">
+          Product Categories
+        </h3>
       </FadeIn>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {categories.map((c, i) => (
-          <FadeIn key={c.title} delay={i * 0.1}>
+          <FadeIn key={c.title} delay={i * 0.1} className="h-full">
             <div className="rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark overflow-hidden h-full">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -97,11 +96,11 @@ export function Technology() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-6">
-                <h4 className="font-semibold text-text-primary-light dark:text-text-primary-dark text-lg mb-2">
+              <div className="p-8">
+                <h4 className="font-semibold text-text-primary-light dark:text-text-primary-dark text-lg mb-3">
                   {c.title}
                 </h4>
-                <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark leading-[1.7]">
                   {c.text}
                 </p>
               </div>

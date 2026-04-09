@@ -3,48 +3,47 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --color-brand-50: #ecfdf5;
-  --color-brand-100: #d1fae5;
-  --color-brand-200: #a7f3d0;
-  --color-brand-300: #6ee7b7;
-  --color-brand-400: #34d399;
-  --color-brand-500: #0D9373;
-  --color-brand-600: #0b7d62;
-  --color-brand-700: #095e4a;
-  --color-brand-800: #073f32;
-  --color-brand-900: #042f25;
-  --color-surface-light: #fafafa;
-  --color-surface-dark: #0A0A0A;
-  --color-surface-card-light: #ffffff;
-  --color-surface-card-dark: #141414;
-  --color-surface-elevated-light: #f5f5f5;
-  --color-surface-elevated-dark: #1a1a1a;
-  --color-text-primary-light: #0f172a;
-  --color-text-primary-dark: #f1f5f9;
-  --color-text-secondary-light: #475569;
-  --color-text-secondary-dark: #94a3b8;
-  --color-border-light: #e2e8f0;
-  --color-border-dark: #1e293b;
-}
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  --color-brand-50: #eefbf4;
+  --color-brand-100: #d0f5e0;
+  --color-brand-200: #a4eac5;
+  --color-brand-300: #6bd9a3;
+  --color-brand-400: #30c17d;
+  --color-brand-500: #0D9373;
+  --color-brand-600: #0a7a5f;
+  --color-brand-700: #08614c;
+  --color-brand-800: #064d3d;
+  --color-brand-900: #043a2e;
+
+  --color-surface-light: #fafaf8;
+  --color-surface-dark: #0b0c0e;
+  --color-surface-card-light: #ffffff;
+  --color-surface-card-dark: #131517;
+  --color-surface-elevated-light: #f3f3f0;
+  --color-surface-elevated-dark: #16181b;
+
+  --color-text-primary-light: #111111;
+  --color-text-primary-dark: #ededed;
+  --color-text-secondary-light: #5c5c5c;
+  --color-text-secondary-dark: #8a8a8a;
+
+  --color-border-light: #e4e4e0;
+  --color-border-dark: #222426;
 }
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: var(--font-sans);
   background-color: var(--color-surface-light);
   color: var(--color-text-primary-light);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .dark body {
@@ -56,4 +55,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+::selection {
+  background-color: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+.dark ::selection {
+  background-color: var(--color-brand-800);
+  color: var(--color-brand-100);
 }
