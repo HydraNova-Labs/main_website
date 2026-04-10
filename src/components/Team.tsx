@@ -19,7 +19,6 @@ const team = [
   {
     name: 'Adam Meek',
     role: 'Chief Operating Officer',
-//     headshot: '/headshots/Adam_headshot.jpg',
     description:
       'Project management expert with 40+ years scaling projects. Ensures the roadmap executes on schedule.',
     tags: ['Operations', 'Infrastructure', 'Scaling'],
@@ -34,7 +33,6 @@ const team = [
   {
     name: 'Clay Moore',
     role: 'Chief AI Officer',
-//     headshot: '/headshots/Clay_headshot.jpg',
     description:
       'Plant genomics & drug discovery researcher at Texas A&M. Specializes in engineering bioactive compounds through computational modeling and molecular biology.',
     tags: ['Molecular Biology', 'Plant Genomics', 'Drug Discovery'],
