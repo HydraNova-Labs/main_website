@@ -9,6 +9,7 @@ const specs = [
   { icon: Box, title: 'Stainless Steel', description: 'Specialized shelving for tissue culture' },
 ]
 
+/* Product categories — hidden for now, may re-enable later
 const categories = [
   {
     title: 'Horticulture',
@@ -26,6 +27,7 @@ const categories = [
     image: 'https://images.unsplash.com/photo-1585399000684-d2f72660f092?w=600&q=80',
   },
 ]
+*/
 
 export function Technology() {
   return (
