@@ -13,8 +13,8 @@ const team = [
     name: 'Braz Vaidya',
     role: 'Chief Science Officer',
     description:
-      'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
-    tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
+      'Veteran plant biotech leader with 30+ years scaling tissue culture from lab to commercial automation. Founder of multiple international biotech ventures.',
+    tags: ['Micropropagation', 'Plant Tissue Culture Research', 'Commercial Automation'],
   },
   {
     name: 'Adam Meek',
