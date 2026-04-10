@@ -19,6 +19,7 @@ const team = [
   {
     name: 'Adam Meek',
     role: 'Chief Operating Officer',
+//     headshot: '/headshots/Adam_headshot.jpg',
     description:
       'Project management expert with 40+ years scaling projects. Ensures the roadmap executes on schedule.',
     tags: ['Operations', 'Infrastructure', 'Scaling'],
@@ -33,6 +34,7 @@ const team = [
   {
     name: 'Clay Moore',
     role: 'Chief AI Officer',
+//     headshot: '/headshots/Clay_headshot.jpg',
     description:
       'Plant genomics & drug discovery researcher at Texas A&M. Specializes in engineering bioactive compounds through computational modeling and molecular biology.',
     tags: ['Molecular Biology', 'Plant Genomics', 'Drug Discovery'],
@@ -42,7 +44,7 @@ const team = [
     role: 'Chief Technology Officer',
     description:
       'M.S. Chemical Engineering with Fortune 500 platform engineering leadership. Published researcher in computational modeling and ML-driven optimization.',
-    tags: ['Platform Engineering', 'ML Infrastructure', 'DevOps'],
+    tags: ['Platform Engineering', 'Scientific Computing', 'ML Infrastructure'],
   },
 
 ]
@@ -76,10 +78,14 @@ export function Team() {
           <FadeIn key={t.name} delay={i * 0.12} className="h-full">
             <div className="p-10 md:p-11 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center h-full flex flex-col">
               {/* Avatar */}
-              <div className="w-20 h-20 rounded-full bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mx-auto mb-7">
-                <span className="text-xl font-semibold text-brand-500 dark:text-brand-400">
-                  {t.name.split(' ').map(n => n[0]).join('')}
-                </span>
+              <div className="w-28 h-28 rounded-full bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mx-auto mb-7 overflow-hidden">
+                {t.headshot ? (
+                  <img src={t.headshot} alt={t.name} className="w-full h-full object-cover" />
+                ) : (
+                  <span className="text-2xl font-semibold text-brand-500 dark:text-brand-400">
+                    {t.name.split(' ').map(n => n[0]).join('')}
+                  </span>
+                )}
               </div>
               <h3 className="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark">
                 {t.name}

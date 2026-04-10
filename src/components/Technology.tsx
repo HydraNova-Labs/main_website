@@ -56,7 +56,7 @@ export function Technology() {
       <FadeIn delay={0.15}>
         <div className="rounded-2xl overflow-hidden mb-24 aspect-[21/9]">
           <img
-            src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1400&q=80"
+            src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1000&q=80"
             alt="Controlled environment agriculture technology"
             className="w-full h-full object-cover"
           />
