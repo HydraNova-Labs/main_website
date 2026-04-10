@@ -1,7 +1,7 @@
 import { Section } from './Section'
 import { FadeIn } from './FadeIn'
 
-const team = [
+const team: { name: string; role: string; headshot?: string; description: string; tags: string[] }[] = [
   {
     name: 'Nevada King',
     role: 'Cheif Executive Officer',
