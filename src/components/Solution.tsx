@@ -5,13 +5,13 @@ import { ShieldCheck, Dna, Layers, SlidersHorizontal } from 'lucide-react'
 const pillars = [
   {
     icon: ShieldCheck,
-    title: 'Clean & Virus-Free',
-    description: 'Zero pathogens, zero viruses — disease-free at the cellular level. Every plant begins in a sterile, controlled environment.',
+    title: 'Clean & Pathogen-Free',
+    description: 'Zero disease, zero pathogens — pathogen-free at every level. Every plant begins in a sterile, controlled environment.',
   },
   {
     icon: Dna,
     title: 'Identical Genetics',
-    description: 'Genetic consistency at scale, matched to top-performing parents. Every plant identical in performance, yield, and structure.',
+    description: 'Genetic consistency at scale, true to type and matched to top-performing parents. Every plant identical in performance, yield, and structure.',
   },
   {
     icon: Layers,
@@ -21,7 +21,7 @@ const pillars = [
   {
     icon: SlidersHorizontal,
     title: 'Precise & Year-Round',
-    description: 'Total control over temperature, nutrients, light, and hormones. Production independent of season.',
+    description: 'Total control over temperature, nutrients, light, and Plant Growth Regulators (PGRs). Production 24/7/365.',
   },
 ]
 
@@ -37,15 +37,15 @@ export function Solution() {
         </FadeIn>
         <FadeIn delay={0.1} className="text-center">
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary-light dark:text-text-primary-dark leading-[1.1] tracking-[-0.01em]">
-            We Don't Clone Plants.
+            We Grow More Than Plants.
             <br />
-            <span className="italic text-brand-500 dark:text-brand-400">We Engineer Certainty.</span>
+            <span className="italic text-brand-500 dark:text-brand-400">We Grow Certainty.</span>
           </h2>
         </FadeIn>
         <FadeIn delay={0.2} className="text-center">
           <p className="mt-7 text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
-            Our precision tissue culture platform eliminates uncertainty, delivering disease-free,
-            genetically stable plants at industrial scale — grown from individual cells in
+            Our precision tissue culture platform eliminates uncertainty, delivering pathogen-free,
+            genetically stable plants at industrial scale — grown from plant tissues in
             sterile, nutrient-rich medium, completely outside of soil.
           </p>
         </FadeIn>

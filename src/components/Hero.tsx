@@ -37,9 +37,9 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.12, ease }}
           className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-text-primary-light dark:text-text-primary-dark leading-[1.08] tracking-[-0.02em]"
         >
-          Genetically Stable Plants
+          Strong Genetics,
           <br />
-          for a <span className="italic text-brand-500 dark:text-brand-400">Volatile Future</span>
+          <span className="italic text-brand-500 dark:text-brand-400">Sustainable Future</span>
         </motion.h1>
 
         <motion.p

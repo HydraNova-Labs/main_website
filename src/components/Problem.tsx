@@ -11,7 +11,7 @@ const stats = [
 
 const threats = [
   {
-    title: 'Seed Contamination',
+    title: 'Scarcity of Clean Seeds & Plants',
     text: 'Infected planting material spreads disease globally. One contaminated batch acts as a "Trojan Horse," destroying entire seasons before they begin.',
   },
   {

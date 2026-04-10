@@ -7,7 +7,7 @@ const services = [
     icon: FlaskConical,
     title: 'Tissue Culture Clones',
     description:
-      'The gold standard in cultivation, delivering genetically identical, virus-free plants that thrive in any environment. Our process eliminates pathogens and harmful viruses, giving you a clean slate for cultivation.',
+      'The gold standard in cultivation, delivering genetically identical, pathogen-free plants that thrive in any environment. Our process eliminates all pathogens and disease, giving you a clean slate for cultivation.',
     image: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80',
   },
   {

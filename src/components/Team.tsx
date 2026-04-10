@@ -4,25 +4,47 @@ import { FadeIn } from './FadeIn'
 const team = [
   {
     name: 'Nevada King',
-    role: 'CEO',
+    role: 'Cheif Executive Officer',
     description:
       'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
     tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
   },
   {
+    name: 'Braz Vaidya',
+    role: 'Chief Science Officer',
+    description:
+      'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
+    tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
+  },
+  {
+    name: 'Adam Meek',
+    role: 'Chief Operating Officer',
+    description:
+      'Project management expert with 40+ years scaling projects. Ensures the roadmap executes on schedule.',
+    tags: ['Operations', 'Infrastructure', 'Scaling'],
+  },
+  {
     name: 'Clovis McCary',
-    role: 'CSO',
+    role: 'Chief Marketing Officer',
     description:
       'Award-winning B2B agricultural sales leader. The relationship engine behind 7 global LOIs and the 178,000-plant pre-sale pipeline.',
     tags: ['Global Sales', 'B2B Partnerships', 'Ag-Tech'],
   },
   {
-    name: 'Adam Meek',
-    role: 'COO',
+    name: 'Clay Moore',
+    role: 'Chief AI Officer',
     description:
-      'Project management expert with 40+ years scaling projects. Ensures the roadmap executes on schedule.',
-    tags: ['Operations', 'Infrastructure', 'Scaling'],
+      'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
+    tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
   },
+  {
+    name: 'Alex Buettner',
+    role: 'Chief Technology Officer',
+    description:
+      'M.S. Chemical Engineering with Fortune 500 platform engineering leadership. Published researcher in computational modeling and ML-driven optimization.',
+    tags: ['Platform Engineering', 'ML Infrastructure', 'DevOps'],
+  },
+
 ]
 
 export function Team() {
@@ -93,6 +115,7 @@ export function Team() {
             {[
               { name: 'Biora Technologies', sub: 'Precision Controlled Environments' },
               { name: 'Advanced Nutrients', sub: 'Agricultural Biotech Solutions' },
+              { name: 'ABI Technologies', sub: 'Technical Consultation' },
             ].map(p => (
               <div
                 key={p.name}

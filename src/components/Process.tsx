@@ -2,12 +2,10 @@ import { Section } from './Section'
 import { FadeIn } from './FadeIn'
 
 const stages = [
-  { step: '0', title: 'Donor Intake', description: 'Elite genetics validated' },
-  { step: '1', title: 'Callus Initiation', description: 'Cell mass formation' },
-  { step: '2', title: 'Cell Suspension', description: 'Rapid multiplication' },
-  { step: '3', title: 'Vessel Transfer', description: 'Genetic verification' },
-  { step: '4', title: 'Plantlet Formation', description: 'Roots & shoots emerge' },
-  { step: '5', title: 'Hardening & Sale', description: 'Disease-free delivery' },
+  { step: '1', title: 'Donor Plant Intake', description: 'Initialization & elite genetics validated' },
+  { step: '2', title: 'Rapid Multiplication', description: 'Direct organogenesis at scale' },
+  { step: '3', title: 'Rooting', description: 'Root development & plantlet formation' },
+  { step: '4', title: 'Hardening & Sale', description: 'Pathogen-free delivery' },
 ]
 
 export function Process() {
@@ -22,14 +20,14 @@ export function Process() {
         </FadeIn>
         <FadeIn delay={0.1} className="text-center">
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary-light dark:text-text-primary-dark leading-[1.1] tracking-[-0.01em]">
-            From Single Cell
+            From Plant Tissues
             <br />
             to <span className="italic text-brand-500 dark:text-brand-400">Perfect Clone</span>
           </h2>
         </FadeIn>
         <FadeIn delay={0.2} className="text-center">
           <p className="mt-7 text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
-            Six stages to a perfect plant. Automated, modular, and repeatable.
+            Four stages to a perfect plant. Automated, modular, and repeatable.
           </p>
         </FadeIn>
       </div>
