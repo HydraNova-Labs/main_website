@@ -34,8 +34,8 @@ const team = [
     name: 'Clay Moore',
     role: 'Chief AI Officer',
     description:
-      'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
-    tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
+      'Plant genomics & drug discovery researcher at Texas A&M. Specializes in engineering bioactive compounds through computational modeling and molecular biology.',
+    tags: ['Molecular Biology', 'Plant Genomics', 'Drug Discovery'],
   },
   {
     name: 'Alex Buettner',
@@ -49,7 +49,7 @@ const team = [
 
 export function Team() {
   return (
-    <Section id="team">
+    <Section id="team" dark>
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-24">
         <FadeIn className="text-center">
@@ -105,33 +105,6 @@ export function Team() {
         ))}
       </div>
 
-      {/* Partners */}
-      <FadeIn delay={0.2}>
-        <div className="mt-28 pt-16 border-t border-border-light dark:border-border-dark text-center">
-          <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-12">
-            Strategic Partners
-          </p>
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6">
-            {[
-              { name: 'Biora Technologies', sub: 'Precision Controlled Environments' },
-              { name: 'Advanced Nutrients', sub: 'Agricultural Biotech Solutions' },
-              { name: 'ABI Technologies', sub: 'Technical Consultation' },
-            ].map(p => (
-              <div
-                key={p.name}
-                className="px-12 py-8 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark"
-              >
-                <p className="font-semibold text-text-primary-light dark:text-text-primary-dark text-lg">
-                  {p.name}
-                </p>
-                <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark mt-2">
-                  {p.sub}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </FadeIn>
     </Section>
   )
 }

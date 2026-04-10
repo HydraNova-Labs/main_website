@@ -4,7 +4,7 @@ import { Mail, Phone } from 'lucide-react'
 
 export function Contact() {
   return (
-    <Section id="contact" dark>
+    <Section id="contact">
       <div className="text-center max-w-2xl mx-auto">
         <FadeIn className="text-center">
           <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-5">

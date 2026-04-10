@@ -29,7 +29,7 @@ const categories = [
 
 export function Technology() {
   return (
-    <Section id="technology" dark>
+    <Section id="technology">
       {/* Header */}
       <div className="text-center max-w-2xl mx-auto mb-24">
         <FadeIn className="text-center">
@@ -78,7 +78,8 @@ export function Technology() {
         ))}
       </div>
 
-      {/* Product categories */}
+      {/* Product categories — hidden for now, may re-enable later */}
+      {/*
       <FadeIn className="text-center">
         <h3 className="font-serif text-2xl md:text-3xl text-text-primary-light dark:text-text-primary-dark mb-14">
           Product Categories
@@ -108,6 +109,35 @@ export function Technology() {
           </FadeIn>
         ))}
       </div>
+      */}
+
+      {/* Strategic Partners */}
+      <FadeIn delay={0.2}>
+        <div className="mt-28 pt-16 border-t border-border-light dark:border-border-dark text-center">
+          <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-12">
+            Strategic Partners
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              { name: 'Biora Technologies', sub: 'Precision Controlled Environments' },
+              { name: 'Advanced Nutrients', sub: 'Agricultural Biotech Solutions' },
+              { name: 'ABI Technologies', sub: 'Technical Consultation' },
+            ].map(p => (
+              <div
+                key={p.name}
+                className="py-8 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center"
+              >
+                <p className="font-semibold text-text-primary-light dark:text-text-primary-dark text-lg">
+                  {p.name}
+                </p>
+                <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark mt-2">
+                  {p.sub}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </FadeIn>
     </Section>
   )
 }

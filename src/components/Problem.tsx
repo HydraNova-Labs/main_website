@@ -35,14 +35,14 @@ export function Problem() {
       <div className="text-center max-w-2xl mx-auto mb-24">
         <FadeIn className="text-center">
           <p className="text-brand-600 dark:text-brand-400 font-medium text-sm tracking-[0.25em] uppercase mb-5">
-            The Crisis
+            The Problem
           </p>
         </FadeIn>
         <FadeIn delay={0.1} className="text-center">
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary-light dark:text-text-primary-dark leading-[1.1] tracking-[-0.01em]">
             The World's Food System
             <br />
-            Is <span className="italic text-brand-500 dark:text-brand-400">Under Attack</span>
+            Is <span className="italic text-brand-500 dark:text-brand-400">Under Pressure</span>
           </h2>
         </FadeIn>
         <FadeIn delay={0.2} className="text-center">

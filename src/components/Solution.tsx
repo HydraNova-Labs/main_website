@@ -16,7 +16,7 @@ const pillars = [
   {
     icon: Layers,
     title: 'Scalable to Millions',
-    description: 'Modular infrastructure scales from 5 to 130 chambers seamlessly — all from a single source plant.',
+    description: 'Scale production from thousands to millions of plants seamlessly — all from a single source plant.',
   },
   {
     icon: SlidersHorizontal,
@@ -78,6 +78,27 @@ export function Solution() {
           </FadeIn>
         ))}
       </div>
+
+      {/* Traction stats */}
+      <FadeIn delay={0.2}>
+        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-5">
+          {[
+            { value: '20,000+', label: 'Plants Delivered' },
+            { value: '178,000+', label: 'Plants Pre-Sold' },
+            { value: '7 LOIs', label: 'Global Partnerships' },
+            { value: '10.4x', label: 'Validated ROI' },
+          ].map(s => (
+            <div key={s.label} className="text-center py-8 px-4 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-serif text-brand-500 dark:text-brand-400 tracking-tight">
+                {s.value}
+              </p>
+              <p className="mt-3 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+                {s.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </FadeIn>
 
     </Section>
   )
