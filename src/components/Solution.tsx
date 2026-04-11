@@ -15,8 +15,8 @@ const pillars = [
   },
   {
     icon: Layers,
-    title: 'Scalable to Millions',
-    description: 'Scale production from thousands to millions of plants seamlessly — all from a single source plant.',
+    title: 'Modular Production',
+    description: 'Automated production scales from thousands to millions of plants seamlessly — all from a single source plant.',
   },
   {
     icon: SlidersHorizontal,
@@ -55,7 +55,7 @@ export function Solution() {
       <FadeIn delay={0.15}>
         <div className="rounded-2xl overflow-hidden mb-24 aspect-[16/7]">
           <img
-            src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1400&q=80"
+            src="images/plants_on_rack.jpg"
             alt="Laboratory tissue culture environment"
             className="w-full h-full object-cover"
           />

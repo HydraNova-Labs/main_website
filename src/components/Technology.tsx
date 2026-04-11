@@ -56,7 +56,7 @@ export function Technology() {
       <FadeIn delay={0.15}>
         <div className="rounded-2xl overflow-hidden mb-24 aspect-[21/9]">
           <img
-            src="/renders/biora_module_render_sky2.png"
+            src="/images/biora_chamber.jpg"
             alt="Controlled environment agriculture technology"
             className="w-full h-full object-cover"
           />

@@ -21,7 +21,8 @@ export function Navbar({ dark, toggle }: NavbarProps) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-xl border-b border-border-light dark:border-border-dark">
       <div className="max-w-[1080px] mx-auto px-8 sm:px-12 md:px-16 lg:px-8 flex items-center justify-between h-16 md:h-18">
-        <a href="#" className="font-serif text-xl md:text-2xl italic text-text-primary-light dark:text-text-primary-dark">
+        <a href="#" className="flex items-center gap-2.5 font-serif text-xl md:text-2xl italic text-text-primary-light dark:text-text-primary-dark">
+          <img src="/favicon.svg" alt="HydraNova Labs logo" className="h-7 md:h-8" style={{ width: 'auto', maxHeight: '2rem' }} />
           HydraNova Labs
         </a>
 

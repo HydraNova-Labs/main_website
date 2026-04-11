@@ -3,10 +3,10 @@ import { FadeIn } from './FadeIn'
 import { AlertTriangle, Bug, TrendingDown, Globe } from 'lucide-react'
 
 const stats = [
-  { value: '$220B+', label: 'Annual Global Crop Losses', icon: TrendingDown },
-  { value: '1.7B', label: 'People Facing Lower Yields', icon: Globe },
-  { value: '20–40%', label: 'Crops Lost Annually', icon: Bug },
-  { value: '70%', label: 'Traditional Clone Failure', icon: AlertTriangle },
+  { value: '$220 B+', label: 'Annual Global Crop Losses', icon: TrendingDown },
+  { value: '~1.7 B', label: 'People Facing Lower Yields', icon: Globe },
+  { value: '20–40 %', label: 'Crops Lost Annually', icon: Bug },
+  { value: '50-70 %', label: 'Failure of Traditional Methods', icon: AlertTriangle },
 ]
 
 const threats = [
@@ -61,8 +61,8 @@ export function Problem() {
             alt="Agricultural field showing effects of crop disease"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-          <p className="absolute bottom-8 left-10 right-10 text-white/80 text-base md:text-lg font-serif italic leading-relaxed">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 via-[60%] to-transparent" />
+          <p className="absolute bottom-4 md:bottom-8 left-10 right-10 text-white text-base md:text-xl font-serif italic leading-relaxed drop-shadow-lg" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}>
             "Plant diseases, driven by aggressive viruses and fungal pathogens,
             compromise global food security by reducing crop yields and quality."
           </p>

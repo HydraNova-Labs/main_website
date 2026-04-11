@@ -58,7 +58,7 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="mt-5 text-sm text-text-secondary-light dark:text-text-secondary-dark italic tracking-wide"
         >
-          Where Biology Meets Engineering. Where Science Becomes Scale.
+          Where Biology Meets Industrial Biomanufacturing.
         </motion.p>
 
         <motion.div

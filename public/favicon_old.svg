@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" width="210" height="210">
+  <defs>
+    <linearGradient id="bgC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F3A5C"/>
+      <stop offset="100%" stop-color="#072030"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background circle -->
+  <circle cx="105" cy="105" r="105" fill="url(#bgC)"/>
+
+  <!-- dashed outer seal ring -->
+  <circle cx="105" cy="105" r="100" fill="none" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="3 6" opacity="0.5"/>
+  <!-- inner subtle ring -->
+  <circle cx="105" cy="105" r="91" fill="none" stroke="#5DCAA5" stroke-width="0.7" opacity="0.18"/>
+
+  <!-- rule lines above and below letters -->
+  <line x1="29" y1="61" x2="181" y2="61" stroke="#1D9E75" stroke-width="0.9" opacity="0.35"/>
+  <line x1="29" y1="153" x2="181" y2="153" stroke="#1D9E75" stroke-width="0.9" opacity="0.35"/>
+
+  <!-- H — white -->
+  <text
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="66"
+    text-anchor="middle"
+    dominant-baseline="central"
+    x="53" y="107"
+    fill="#FFFFFF">H</text>
+
+  <!-- N — light teal -->
+  <text
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="66"
+    text-anchor="middle"
+    dominant-baseline="central"
+    x="107" y="107"
+    fill="#9FE1CB">N</text>
+
+  <!-- L — mid teal -->
+  <text
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="66"
+    text-anchor="middle"
+    dominant-baseline="central"
+    x="159" y="107"
+    fill="#5DCAA5">L</text>
+
+  <!-- diamond dot separators -->
+  <polygon points="79,102 83,107 79,112 75,107" fill="#1D9E75" opacity="0.6"/>
+  <polygon points="133,102 137,107 133,112 129,107" fill="#1D9E75" opacity="0.6"/>
+</svg>
