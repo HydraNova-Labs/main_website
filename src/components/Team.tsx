@@ -5,6 +5,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Nevada King',
     role: 'Cheif Executive Officer',
+    headshot: 'headshots/Nevada_headshot.jpg',
     description:
       'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
     tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
@@ -12,6 +13,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Braz Vaidya',
     role: 'Chief Science Officer',
+    headshot: 'headshots/Braz_headshot.jpg',
     description:
       'Veteran plant biotech leader with 30+ years scaling tissue culture from lab to commercial automation. Founder of multiple international biotech ventures.',
     tags: ['Micropropagation', 'Plant Tissue Culture Research', 'Commercial Automation'],
@@ -19,6 +21,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Adam Meek',
     role: 'Chief Operating Officer',
+    headshot: 'headshots/Adam_headshot.jpg',
     description:
       'Project management expert with 40+ years scaling projects. Ensures the roadmap executes on schedule.',
     tags: ['Operations', 'Infrastructure', 'Scaling'],
@@ -26,6 +29,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Clovis McCary',
     role: 'Chief Marketing Officer',
+    headshot: 'headshots/Clovis_headshot.jpg',
     description:
       'Award-winning B2B agricultural sales leader. The relationship engine behind 7 global LOIs and the 178,000-plant pre-sale pipeline.',
     tags: ['Global Sales', 'B2B Partnerships', 'Ag-Tech'],
@@ -33,6 +37,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Clay Moore',
     role: 'Chief AI Officer',
+    headshot: 'headshots/Clay_headshot.jpg',
     description:
       'Plant genomics & drug discovery researcher at Texas A&M. Specializes in engineering bioactive compounds through computational modeling and molecular biology.',
     tags: ['Molecular Biology', 'Plant Genomics', 'Drug Discovery'],
@@ -40,6 +45,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Alex Buettner',
     role: 'Chief Technology Officer',
+    headshot: 'headshots/Alex_headshot.jpg',
     description:
       'M.S. Chemical Engineering with Fortune 500 platform engineering leadership. Published researcher in computational modeling and ML-driven optimization.',
     tags: ['Platform Engineering', 'Scientific Computing', 'ML Infrastructure'],
@@ -64,7 +70,7 @@ export function Team() {
         </FadeIn>
         <FadeIn delay={0.2} className="text-center">
           <p className="mt-7 text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
-            A team combining deep scientific expertise, proven sales execution, and decades of
+            A team combining deep scientific and technological expertise, proven sales execution, and decades of
             operational scaling.
           </p>
         </FadeIn>

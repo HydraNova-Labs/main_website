@@ -15,7 +15,7 @@ export function Contact() {
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary-light dark:text-text-primary-dark leading-[1.1] tracking-[-0.01em]">
             Join Us in Engineering
             <br />
-            the <span className="italic text-brand-500 dark:text-brand-400">Future of Food</span>
+            the <span className="italic text-brand-500 dark:text-brand-400">Future of Agriculture</span>
           </h2>
         </FadeIn>
         <FadeIn delay={0.2} className="text-center">
