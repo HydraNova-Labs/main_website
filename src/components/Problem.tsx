@@ -6,7 +6,7 @@ const stats = [
   { value: '$220 B+', label: 'Annual Global Crop Losses', icon: TrendingDown },
   { value: '~1.7 B', label: 'People Facing Lower Yields', icon: Globe },
   { value: '20–40 %', label: 'Crops Lost Annually', icon: Bug },
-  { value: '50-70 %', label: 'Failure of Traditional Methods', icon: AlertTriangle },
+  { value: '50–70 %', label: 'Failure of Traditional Methods', icon: AlertTriangle },
 ]
 
 const threats = [

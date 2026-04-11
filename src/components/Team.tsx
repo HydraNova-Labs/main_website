@@ -4,7 +4,7 @@ import { FadeIn } from './FadeIn'
 const team: { name: string; role: string; headshot?: string; description: string; tags: string[] }[] = [
   {
     name: 'Nevada King',
-    role: 'Cheif Executive Officer',
+    role: 'Chief Executive Officer',
     headshot: 'headshots/Nevada_headshot.jpg',
     description:
       'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
