@@ -13,7 +13,7 @@ const team: { name: string; role: string; headshot?: string; description: string
   {
     name: 'Braz Vaidya',
     role: 'Chief Science Officer',
-    headshot: 'headshots/Braz_headshot.jpg',
+    headshot: 'headshots/Braz_headshot.png',
     description:
       'Veteran plant biotech leader with 30+ years scaling tissue culture from lab to commercial automation. Founder of multiple international biotech ventures.',
     tags: ['Micropropagation', 'Plant Tissue Culture Research', 'Commercial Automation'],
