@@ -1,17 +1,17 @@
 import { Section } from './Section'
 import { FadeIn } from './FadeIn'
-import { ShieldCheck, Dna, Layers, SlidersHorizontal } from 'lucide-react'
+import { ShieldCheck, Dna, Layers, Calendar } from 'lucide-react'
 
 const pillars = [
-  {
-    icon: ShieldCheck,
-    title: 'Clean & Pathogen-Free',
-    description: 'Zero disease, zero pathogens — pathogen-free at every level. Every plant moves through our sterile, controlled environments.',
-  },
   {
     icon: Dna,
     title: 'Monoclonal Production',
     description: 'Genetic consistency at scale, true to type and matched to top-performing parents. Every plant identical in performance, yield, and structure.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Clean & Pathogen-Free',
+    description: 'Zero disease, zero pathogens — pathogen-free at every level. Every plant moves through our sterile, controlled environments.',
   },
   {
     icon: Layers,
@@ -19,7 +19,7 @@ const pillars = [
     description: 'Automated production scales from thousands to millions of plants seamlessly — all from a single source plant.',
   },
   {
-    icon: SlidersHorizontal,
+    icon: Calendar,
     title: 'Precise & Year-Round',
     description: 'Total control over temperature, nutrients, light, and Plant Growth Regulators (PGRs). Production 24/7/365.',
   },
@@ -61,6 +61,28 @@ export function Solution() {
           />
         </div>
       </FadeIn>
+
+      {/* Education — uncomment when ready
+      <FadeIn>
+        <div className="max-w-5xl mx-auto text-center mb-24">
+          <h3 className="font-serif text-2xl md:text-3xl text-text-primary-light dark:text-text-primary-dark mb-5">
+            Precision over chance
+          </h3>
+          <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed mb-5">
+            HydraNova Labs exists because agriculture can't afford variability anymore. Genetic
+            drift, disease pressure, scaling bottlenecks, climate instability — these problems
+            compound, and traditional propagation has no answer for the feedback loop they create.
+          </p>
+          <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
+            We approach it differently. Our automated tissue culture platform controls every variable
+            — environment, nutrition, genetics — from a single verified source plant. No seed
+            lottery, no seasonal dependency, no pathogen carryover. The result is genetically
+            identical, disease-free plants produced at industrial scale, year-round. We don't
+            reduce variability; we engineer it out.
+          </p>
+        </div>
+      </FadeIn>
+      */}
 
       {/* Pillars */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-10">

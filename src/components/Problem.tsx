@@ -11,18 +11,22 @@ const stats = [
 
 const threats = [
   {
-    title: 'Scarcity of Clean Seeds & Plants',
-    text: 'Infected planting material spreads disease globally. One contaminated batch acts as a "Trojan Horse," destroying entire seasons before they begin.',
-  },
-  {
+    tag: 'Genetics',
     title: 'Epigenetic Drift',
     text: 'Traditional cloning amplifies genetic weaknesses over generations, leading to progressively weaker crops.',
   },
   {
+    tag: 'Disease',
+    title: 'Scarcity of Clean Seeds & Plants',
+    text: 'Infected planting material spreads disease globally. One contaminated batch acts as a "Trojan Horse," destroying entire seasons before they begin.',
+  },
+  {
+    tag: 'Industry',
     title: 'Limited Scalability',
     text: 'Conventional propagation cannot meet growing demand. Manual cloning is slow, labor-intensive, and prone to human error.',
   },
   {
+    tag: 'Environment',
     title: 'Climate Volatility',
     text: 'Extreme weather, drought cycles, and soil degradation are destroying traditional agriculture. Controlled environments are no longer optional.',
   },
@@ -88,7 +92,12 @@ export function Problem() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {threats.map((t, i) => (
           <FadeIn key={t.title} delay={i * 0.08} className="h-full">
-            <div className="p-9 md:p-10 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark h-full">
+            <div className="relative p-9 md:p-10 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark h-full">
+              {t.tag && (
+                <span className="absolute top-5 right-5 text-xs font-medium px-2.5 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:bg-brand-400/10 dark:text-brand-400">
+                  {t.tag}
+                </span>
+              )}
               <h3 className="text-lg font-semibold text-text-primary-light dark:text-text-primary-dark mb-3">
                 {t.title}
               </h3>
