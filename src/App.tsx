@@ -8,6 +8,7 @@ import { Technology } from './components/Technology'
 import { Team } from './components/Team'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+import { CookieConsent } from './components/CookieConsent'
 
 function App() {
   const { dark, toggle } = useTheme()
@@ -25,6 +26,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <CookieConsent />
     </>
   )
 }
