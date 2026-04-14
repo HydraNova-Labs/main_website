@@ -15,7 +15,7 @@ const threats = [
     text: 'Infected planting material spreads disease globally. One contaminated batch acts as a "Trojan Horse," destroying entire seasons before they begin.',
   },
   {
-    title: 'Genetic Degradation',
+    title: 'Epigenetic Drift',
     text: 'Traditional cloning amplifies genetic weaknesses over generations, leading to progressively weaker crops.',
   },
   {

@@ -6,11 +6,11 @@ const pillars = [
   {
     icon: ShieldCheck,
     title: 'Clean & Pathogen-Free',
-    description: 'Zero disease, zero pathogens — pathogen-free at every level. Every plant begins in a sterile, controlled environment.',
+    description: 'Zero disease, zero pathogens — pathogen-free at every level. Every plant moves through our sterile, controlled environments.',
   },
   {
     icon: Dna,
-    title: 'Identical Genetics',
+    title: 'Monoclonal Production',
     description: 'Genetic consistency at scale, true to type and matched to top-performing parents. Every plant identical in performance, yield, and structure.',
   },
   {
@@ -46,7 +46,7 @@ export function Solution() {
           <p className="mt-7 text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
             Our precision tissue culture platform eliminates uncertainty, delivering pathogen-free,
             genetically stable plants at industrial scale — grown from plant tissues in
-            sterile, nutrient-rich medium, completely outside of soil.
+            sterile, nutrient-rich gel matrix medium.
           </p>
         </FadeIn>
       </div>
