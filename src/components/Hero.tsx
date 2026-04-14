@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1530836176759-510f58baebf4?w=1920&q=80"
-          alt=""
+          alt="Lush green agricultural plants in a controlled growing environment"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-surface-light/90 dark:bg-surface-dark/90" />
