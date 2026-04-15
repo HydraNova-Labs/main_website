@@ -62,43 +62,20 @@ export function Solution() {
         </div>
       </FadeIn>
 
-      {/* Education — uncomment when ready
+      {/* Education */}
       <FadeIn>
         <div className="max-w-5xl mx-auto text-center mb-24">
           <h3 className="font-serif text-2xl md:text-3xl text-text-primary-light dark:text-text-primary-dark mb-5">
-            Precision over chance
+            Precision over probability
           </h3>
           <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed mb-5">
-            HydraNova Labs addresses agriculture's fundamental challenge: variability
-            threatens productivity when global food systems demand consistency. Genetic
-            drift, pathogen pressure, scaling limitations, and climate volatility create
-            compounding inefficiencies that conventional propagation methods cannot resolve.
+            HydraNova Labs solves agriculture's core problem — variability — with an automated tissue culture platform that propagates genetically identical, pathogen-free specimens at industrial scale from a single verified source plant, eliminating genetic drift, seasonal constraints, and disease transmission year-round.
           </p>
           <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed mb-5">
-            Our automated tissue culture platform eliminates these variables through precise
-            control of environmental conditions, nutritional inputs, and genetic integrity.
-            Beginning with a single verified source plant, we propagate genetically identical,
-            pathogen-free specimens at industrial scale throughout the year. This approach
-            removes the unpredictability of seed-based cultivation, eliminates seasonal
-            constraints, and prevents disease transmission across generations.
-          </p>
-          <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed mb-5">
-            The scientific foundation centers on managing both genetic and environmental
-            determinants of phenotypic expression. By controlling epigenetic stability and
-            preventing unwanted DNA methylation patterns, we suppress undesirable trait
-            expression while enhancing beneficial characteristics. Our tissue culture process
-            optimizes cellular energy reserves and metabolic conditioning, creating plants
-            with superior vigor and rapid establishment rates upon transplantation.
-          </p>
-          <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed">
-            This controlled environment cultivation produces specimens that demonstrate
-            enhanced yield potential and consistent phenotypic traits. Plants emerge from
-            our system with optimized cellular metabolism and robust energy stores, enabling
-            accelerated growth and improved performance when transferred to final growing media.
+            The scientific edge lies in controlling both genetic and environmental determinants of phenotypic expression. By managing epigenetic stability and preventing unwanted DNA methylation, the platform suppresses undesirable traits while enhancing beneficial ones, optimizing cellular energy reserves and metabolic conditioning for plants with superior vigor and rapid post-transplant establishment.
           </p>
         </div>
       </FadeIn>
-      */}
 
       {/* Pillars */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-10">
