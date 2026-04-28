@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react'
 
-const GA_ID = 'G-HVPQTP31Z9'
+// Analytics disabled — set GA_ID and flip ANALYTICS_ENABLED to re-enable.
+const ANALYTICS_ENABLED = false
+const GA_ID = ''
 const STORAGE_KEY = 'cookie_consent'
 
 function loadGA() {
+  if (!ANALYTICS_ENABLED || !GA_ID) return
   if (document.getElementById('ga-script')) return
   const script = document.createElement('script')
   script.id = 'ga-script'
@@ -29,6 +32,7 @@ export function CookieConsent() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
+    if (!ANALYTICS_ENABLED) return
     const stored = localStorage.getItem(STORAGE_KEY)
     if (stored === 'accepted') {
       loadGA()
@@ -50,7 +54,7 @@ export function CookieConsent() {
     setVisible(false)
   }
 
-  if (!visible) return null
+  if (!ANALYTICS_ENABLED || !visible) return null
 
   return (
     <div
