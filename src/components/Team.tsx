@@ -7,7 +7,7 @@ const team: { name: string; role: string; headshot?: string; description: string
     role: 'Chief Executive Officer',
     headshot: 'headshots/Nevada_headshot.jpg',
     description:
-      'Expert in Microbiology & Synthetic Biology. Architect of the HydraNova TC platform with deep domain expertise in genetic stability.',
+      'Expert in Microbiology & Synthetic Biology. Architect of the ABI TC Platform with deep domain expertise in genetic stability.',
     tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
   },
   {

@@ -1,6 +1,6 @@
-# HydraNova Labs Website
+# Atlas Bioindustries Website
 
-Static marketing website for [HydraNova Labs](https://hydranovalabs.com) — a precision tissue culture company producing disease-free, genetically stable plants at industrial scale.
+Static marketing website for [Atlas Bioindustries](https://atlasbioindustries.com) — a precision tissue culture company producing disease-free, genetically stable plants at industrial scale.
 
 Built with React, TypeScript, Vite, and Tailwind CSS. Supports light and dark modes with scroll-triggered animations.
 
@@ -40,11 +40,11 @@ A multi-stage Dockerfile builds the site and serves it via nginx on port `8420`.
 
 ```bash
 # Build and run locally
-docker build -t hydranova-website .
-docker run -p 8420:8420 hydranova-website
+docker build -t atlas-bioindustries-website .
+docker run -p 8420:8420 atlas-bioindustries-website
 
 # Or pull the pre-built image from GHCR
 docker compose up -d
 ```
 
-The GitHub Actions workflow automatically builds and pushes the Docker image to `ghcr.io/abuettner93/hydranova_labs_website` on every push to `main`.
+The GitHub Actions workflow automatically builds and pushes the Docker image to `ghcr.io/abuettner93/atlas_bioindustries_website` on every push to `main`.

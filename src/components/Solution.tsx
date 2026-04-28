@@ -69,7 +69,7 @@ export function Solution() {
             Precision over probability
           </h3>
           <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed mb-5">
-            HydraNova Labs solves agriculture's core problem — variability — with an automated tissue culture platform that propagates genetically identical, pathogen-free specimens at industrial scale from a single verified source plant, eliminating genetic drift, seasonal constraints, and disease transmission year-round.
+            Atlas Bioindustries solves agriculture's core problem — variability — with an automated tissue culture platform that propagates genetically identical, pathogen-free specimens at industrial scale from a single verified source plant, eliminating genetic drift, seasonal constraints, and disease transmission year-round.
           </p>
           <p className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed mb-5">
             The scientific edge lies in controlling both genetic and environmental determinants of phenotypic expression. By managing epigenetic stability and preventing unwanted DNA methylation, the platform suppresses undesirable traits while enhancing beneficial ones, optimizing cellular energy reserves and metabolic conditioning for plants with superior vigor and rapid post-transplant establishment.
