@@ -14,16 +14,16 @@ export function Footer() {
         </div>
         <div className="flex gap-8">
           <a
-            href="mailto:grow@atlasbioindustries.com"
+            href="mailto:contact@atlasbioindustries.com"
             className="text-sm text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300"
           >
-            grow@atlasbioindustries.com
+            contact@atlasbioindustries.com
           </a>
           <a
-            href="tel:+12142250544"
+            href="tel:+13373266404"
             className="text-sm text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-300"
           >
-            214-225-0544
+            337-326-6404
           </a>
         </div>
       </div>
