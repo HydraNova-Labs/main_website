@@ -19,14 +19,6 @@ const team: { name: string; role: string; headshot?: string; description: string
     tags: ['Micropropagation', 'Plant Tissue Culture Research', 'Commercial Automation'],
   },
   {
-    name: 'Adam Meek',
-    role: 'Chief Operating Officer',
-    headshot: 'headshots/Adam_headshot.jpg',
-    description:
-      'Project management expert with 40+ years scaling projects. Ensures the roadmap executes on schedule.',
-    tags: ['Operations', 'Infrastructure', 'Scaling'],
-  },
-  {
     name: 'Clovis McCary',
     role: 'Chief Marketing Officer',
     headshot: 'headshots/Clovis_headshot.jpg',
