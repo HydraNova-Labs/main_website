@@ -96,7 +96,7 @@ export function Team() {
                 {t.name}
               </h3>
               <p className="text-brand-500 dark:text-brand-400 font-medium text-sm mt-2 mb-6">
-                {(Array.isArray(t.role) ? t.role : [t.role]).map((r, idx) => (
+                {(Array.isArray(t.role) ? t.role : [t.role]).map((r) => (
                   <span key={r} className="block">{r}</span>
                 ))}
               </p>
