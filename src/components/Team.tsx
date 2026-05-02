@@ -1,14 +1,30 @@
 import { Section } from './Section'
 import { FadeIn } from './FadeIn'
 
-const team: { name: string; role: string; headshot?: string; description: string; tags: string[] }[] = [
+const team: { name: string; role: string | string[]; headshot?: string; description: string; tags: string[] }[] = [
   {
     name: 'Nevada King',
-    role: 'Chief Executive Officer',
+    role: ['President', 'Chief Executive Officer'],
     headshot: 'headshots/Nevada_headshot.jpg',
     description:
       'Expert in Microbiology & Synthetic Biology. Architect of the ABI TC Platform with deep domain expertise in genetic stability.',
     tags: ['Synthetic Biology', 'Genetics', 'R&D Strategy'],
+  },
+  {
+    name: 'Alex Buettner',
+    role: ['Treasurer', 'Chief Operating Officer'],
+    headshot: 'headshots/Alex_headshot.jpg',
+    description:
+      'M.S. Chemical engineer with Fortune 500 engineering leadership experience. Develops capital strategy, operational execution, and infrastructre.',
+    tags: ['Financial Strategy', 'Operations', 'Process Engineering'],
+  },
+  {
+    name: 'Clay Moore',
+    role: ['Secretary','Chief Governance Officer'],
+    headshot: 'headshots/Clay_headshot.jpg',
+    description:
+      'Plant genomics & drug discovery researcher at Texas A&M. Specializes in engineering bioactive compounds through computational modeling and molecular biology.',
+    tags: ['Molecular Biology', 'Plant Genomics', 'Corporate Governance'],
   },
   {
     name: 'Braz Vaidya',
@@ -25,24 +41,7 @@ const team: { name: string; role: string; headshot?: string; description: string
     description:
       'Award-winning B2B agricultural sales leader. The relationship engine behind 7 global LOIs and the 178,000-plant pre-sale pipeline.',
     tags: ['Global Sales', 'B2B Partnerships', 'Ag-Tech'],
-  },
-  {
-    name: 'Clay Moore',
-    role: 'Chief AI Officer',
-    headshot: 'headshots/Clay_headshot.jpg',
-    description:
-      'Plant genomics & drug discovery researcher at Texas A&M. Specializes in engineering bioactive compounds through computational modeling and molecular biology.',
-    tags: ['Molecular Biology', 'Plant Genomics', 'Drug Discovery'],
-  },
-  {
-    name: 'Alex Buettner',
-    role: 'Chief Technology Officer',
-    headshot: 'headshots/Alex_headshot.jpg',
-    description:
-      'M.S. Chemical Engineering with Fortune 500 platform engineering leadership. Published researcher in computational modeling and ML-driven optimization.',
-    tags: ['Platform Engineering', 'Scientific Computing', 'ML Infrastructure'],
-  },
-
+  }
 ]
 
 export function Team() {
@@ -69,9 +68,19 @@ export function Team() {
       </div>
 
       {/* Team cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {team.map((t, i) => (
-          <FadeIn key={t.name} delay={i * 0.12} className="h-full">
+      <div className="grid grid-cols-1 md:grid-cols-6 auto-rows-fr gap-6">
+        {team.map((t, i) => {
+          const remainder = team.length % 3
+          const lastRowStart = team.length - remainder
+          const isFirstInLastRow = remainder !== 0 && i === lastRowStart
+          const offset =
+            isFirstInLastRow && remainder === 1
+              ? 'md:col-start-3'
+              : isFirstInLastRow && remainder === 2
+                ? 'md:col-start-2'
+                : ''
+          return (
+            <FadeIn key={t.name} delay={i * 0.12} className={`h-full md:col-span-2 ${offset}`}>
             <div className="p-10 md:p-11 rounded-2xl border border-border-light dark:border-border-dark bg-surface-card-light dark:bg-surface-card-dark text-center h-full flex flex-col">
               {/* Avatar */}
               <div className="w-28 h-28 rounded-full bg-brand-50 dark:bg-brand-900/30 flex items-center justify-center mx-auto mb-7 overflow-hidden">
@@ -87,7 +96,9 @@ export function Team() {
                 {t.name}
               </h3>
               <p className="text-brand-500 dark:text-brand-400 font-medium text-sm mt-2 mb-6">
-                {t.role}
+                {(Array.isArray(t.role) ? t.role : [t.role]).map((r, idx) => (
+                  <span key={r} className="block">{r}</span>
+                ))}
               </p>
               <p className="text-text-secondary-light dark:text-text-secondary-dark leading-[1.7] text-[15px] mb-7 flex-1">
                 {t.description}
@@ -103,8 +114,9 @@ export function Team() {
                 ))}
               </div>
             </div>
-          </FadeIn>
-        ))}
+            </FadeIn>
+          )
+        })}
       </div>
 
     </Section>
